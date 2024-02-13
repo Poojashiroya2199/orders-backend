@@ -1,2 +1,7 @@
 # orders-backend
-Created with CodeSandbox
+
+run
+ npm i
+
+run
+nodemon server.js
