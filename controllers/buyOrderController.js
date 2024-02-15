@@ -3,7 +3,7 @@ const BuyOrder = require("../models/buyOrderModel");
 
 const createOrder = async (req, res) => {
   const { orderDetails } = req.body;
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -30,7 +30,7 @@ const createOrder = async (req, res) => {
 
 const updateOrder = async (req, res) => {
   const { id, updateDetails } = req.body;
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -61,7 +61,7 @@ const updateOrder = async (req, res) => {
 
 const removeOrder = async (req, res) => {
   const { id } = req.body;
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -88,7 +88,7 @@ const removeOrder = async (req, res) => {
 
 const getOrder = async (req, res) => {
   const id = req.params.id;
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -117,7 +117,7 @@ const getOrder = async (req, res) => {
 
 const getOrders = async (req, res) => {
   const email = req.params.email;
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
