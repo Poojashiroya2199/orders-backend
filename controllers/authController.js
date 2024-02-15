@@ -7,7 +7,7 @@ const login = async (req, res) => {
   const bytes = CryptoJS.AES.decrypt(password, "login");
   const originalText = bytes.toString(CryptoJS.enc.Utf8);
 
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
@@ -51,7 +51,7 @@ const login = async (req, res) => {
 const register = async (req, res) => {
   const { firstName, lastName, email, password, phoneNumber } = req.body;
 
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
@@ -86,7 +86,7 @@ const register = async (req, res) => {
 const logout = async (req, res) => {
   const { email } = req.body;
 
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
@@ -110,7 +110,7 @@ const logout = async (req, res) => {
 
 const forgetPwd = async (req, res) => {
   const { email, newPassword } = req.body;
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
@@ -144,7 +144,7 @@ const forgetPwd = async (req, res) => {
 const resetPassword = async (req, res) => {
   const { email, oldPassword, newPassword } = req.body;
 
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
@@ -194,7 +194,7 @@ const resetPassword = async (req, res) => {
 
 const getUser = async (req, res) => {
   const  email = req.params.email;
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
@@ -219,7 +219,7 @@ const getUser = async (req, res) => {
 
 const updateUser = async (req, res) => {
   const { email, userDetails } = req.body;
-  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app/"); // replace '*' with your frontend's URL in production
+  res.header("Access-Control-Allow-Origin", "https://main--serene-bublanina-87ea3a.netlify.app"); // replace '*' with your frontend's URL in production
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept",
