@@ -11,7 +11,7 @@ const PORT = 3001;
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://main--serene-bublanina-87ea3a.netlify.app", // Replace with your frontend URL
+    origin: "https://orders-frontend.netlify.app", // Replace with your frontend URL
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     optionsSuccessStatus: 200,
