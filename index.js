@@ -9,15 +9,16 @@ const app = express();
 const PORT = 3001;
 
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: "https://orders-frontend.netlify.app", // Replace with your frontend URL
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    credentials: true,
-    optionsSuccessStatus: 200,
-    preflightContinue: false
-  })
-);
+// app.use(
+//   cors({
+//     origin: "https://orders-frontend.netlify.app", // Replace with your frontend URL
+//     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//     credentials: true,
+//     optionsSuccessStatus: 200,
+//     preflightContinue: false
+//   })
+// );
+app.use(cors());
 
 mongoose
   .connect(
